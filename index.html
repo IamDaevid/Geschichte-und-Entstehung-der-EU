@@ -5,42 +5,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Europedia</title>
 <style>
-  #sidebar {
+  #left-sidebar, #right-sidebar {
     position: fixed;
     top: 0;
-    left: 0;
     height: 100%;
     width: 100px;
     background-color: #333;
   }
-  #sidebar img {
+  #left-sidebar img, #right-sidebar img {
     width: 100%;
     height: auto;
     display: block;
   }
+
   #content {
     padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #fff;
+    color: #333; 
   }
+
+  body.dark-mode #content {
+    background-color: #333;
+    color: #fff;
+  }
+
   @media screen and (max-width: 768px) {
-    #sidebar {
+    #left-sidebar, #right-sidebar {
       width: 60px;
     }
     #content {
       margin-left: 60px;
+      margin-right: 60px;
     }
   }
 </style>
 </head>
 <body>
 
-<div id="sidebar">
-  <img src="Europäisches_Parlament.jpg" alt="Europäisches_Parlament">
+<!-- Dark Mode-Schalter -->
+<button onclick="toggleDarkMode()">Dark Mode</button>
+
+<!-- Linker Balken -->
+<div id="left-sidebar">
+  <img src="Europäisches_Parlament.jpg" alt="Europäisches Parlament">
 </div>
 
-<div id="content">
-  <h1>Willkommen auf meiner Website!</h1>
-  <p></p>
+<!-- Rechter Balken -->
+<div id="right-sidebar">
+  <img src="Europäisches_Parlament.jpg" alt="Europäisches Parlament">
 </div>
+
+<!-- Inhaltsbereich der Website -->
+<div id="content">
+  <h1>Willkommen auf Europädia</h1>
+  <p>Dies ist ein Beispieltext</p>
+</div>
+
+<script>
+function toggleDarkMode() {
+  var body = document.body;
+  body.classList.toggle("dark-mode");
+}
+</script>
 
 </body>
 </html>
