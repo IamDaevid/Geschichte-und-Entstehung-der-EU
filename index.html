@@ -11,6 +11,7 @@
     height: 100%;
     width: 100px;
     background-color: #333;
+    z-index: 1;
   }
   #left-sidebar img, #right-sidebar img {
     width: 100%;
@@ -22,13 +23,26 @@
     padding: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: #fff;
-    color: #333; 
+    background-color: #fff; 
+    color: #333;
+    z-index: 0;
+    position: relative;
   }
 
   body.dark-mode #content {
     background-color: #333;
     color: #fff;
+  }
+
+  /* Dark Mode-Stil für die gesamte Website */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+
+  /* Dark Mode-Stil für Balken im Dark Mode */
+  body.dark-mode #left-sidebar, body.dark-mode #right-sidebar {
+    background-color: #111;
   }
 
   @media screen and (max-width: 768px) {
@@ -38,29 +52,31 @@
     #content {
       margin-left: 60px;
       margin-right: 60px;
-    }
+   }
   }
 </style>
 </head>
 <body>
 
 <!-- Dark Mode-Schalter -->
-<button onclick="toggleDarkMode()">Dark Mode</button>
+<div id="dark-mode-toggle">
+  <button onclick="toggleDarkMode()">Dark Mode</button>
+</div>
 
 <!-- Linker Balken -->
 <div id="left-sidebar">
-  <img src="Europäisches_Parlament.jpg" alt="Europäisches Parlament">
+  <img src="dein_linkes_bild.jpg" alt="Dein linkes Bild">
 </div>
 
 <!-- Rechter Balken -->
 <div id="right-sidebar">
-  <img src="Europäisches_Parlament.jpg" alt="Europäisches Parlament">
+  <img src="dein_rechtes_bild.jpg" alt="Dein rechtes Bild">
 </div>
 
 <!-- Inhaltsbereich der Website -->
 <div id="content">
-  <h1>Willkommen auf Europädia</h1>
-  <p>Dies ist ein Beispieltext</p>
+  <h1>Willkommen auf meiner Europedia</h1>
+  <p>Das ist Europedia</p>
 </div>
 
 <script>
