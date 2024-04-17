@@ -1,51 +1,46 @@
 <!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schmaler Balken mit Bild</title>
+<style>
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100px;
+    background-color: #333;
+  }
+  #sidebar img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #content {
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    #sidebar {
+      width: 60px;
+    }
+    #content {
+      margin-left: 60px;
+    }
+  }
+</style>
+</head>
+<body>
 
-<html lang=”de”>
+<div id="sidebar">
+  <img src="dein_bild.jpg" alt="Dein Bild">
+</div>
 
-  <head>
+<div id="content">
+  <h1>Willkommen auf meiner Website!</h1>
+  <p>Hier ist der Hauptinhalt der Website...</p>
+</div>
 
-    <meta charset=”UTF-8″>
-
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
-
-    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
-
-    <title>Europedia</title>
-    <style>
-      #sidebar {
-        position: fixed;
-        top: 0
-        left: 0
-        height: 100%;
-        width:100px;
-      }
-      #sidebar img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-       #content {
-       margin-left: 100px
-       padding: 20px;
-      }
-    </style>
-  </head>
-  <body>
-
-    <main>
-      
-      <div id="sidebar">
-      <img src="Europäisches_Parlament.jpg" alt="Europäisches_Parlament">
-       </div>
-      
-        <div id="content">
-        <h>Willkommen zu dieser Website</h>          
-
-        <p2>Das ist ein Test</p2>
-        </div>
-
-    </main>
-
-  </body>
-
+</body>
 </html>
