@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Europedia</title>
 <style>
-  #left-sidebar, #right-sidebar {
+  #left-sidebar {
     position: fixed;
     top: 0;
     height: 100%;
@@ -13,12 +13,28 @@
     background-color: #333;
     z-index: 1;
   }
-  #left-sidebar img, #right-sidebar img {
+  #left-sidebar img {
     width: 100%;
     height: auto;
     display: block;
   }
 
+  #right-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  #right-sidebar img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
   #content {
     padding: 20px;
     margin-left: 100px;
@@ -33,14 +49,12 @@
     background-color: #333;
     color: #fff;
   }
-
-  /* Dark Mode-Stil für die gesamte Website */
+  
   body.dark-mode {
     background-color: #222;
     color: #fff;
   }
-
-  /* Dark Mode-Stil für Balken im Dark Mode */
+  
   body.dark-mode #left-sidebar, body.dark-mode #right-sidebar {
     background-color: #111;
   }
@@ -50,7 +64,7 @@
       width: 60px;
     }
     #content {
-      margin-left: 60px;
+      margin-left: 60x;
       margin-right: 60px;
    }
   }
@@ -63,17 +77,14 @@
   <button onclick="toggleDarkMode()">Dark Mode</button>
 </div>
 
-<!-- Linker Balken -->
 <div id="left-sidebar">
   <img src="europarlament.jpg" alt="Europäisches Parlament">
 </div>
 
-<!-- Rechter Balken -->
 <div id="right-sidebar">
   <img src="europarlament.jpg" alt="Europäisches Parlament">
 </div>
 
-<!-- Inhaltsbereich der Website -->
 <div id="content">
   <h1>Willkommen auf meiner Europedia</h1>
   <p>Das ist Europedia</p>
