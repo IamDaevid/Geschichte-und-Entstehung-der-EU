@@ -26,7 +26,8 @@
     width: 100%;
     height: auto;
     display: block;
-    backround-image: linear-gradient(to right, rgba(255, 255, 255,0), rgba(0, 0, 0, 1));
+    clip-path: polygon(0 0, 10% 0, 0 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   }
 
   #right-sidebar {
@@ -43,7 +44,8 @@
     width: 100%;
     height: auto;
     display: block;
-    backround-image: linear-gradient(to left, rgba(255, 255, 255,0), rgba(0, 0, 0, 1));
+    clip-path: polygon(100% 0, 90% 0, 100% 100%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   }
   
   #content {
@@ -71,6 +73,10 @@
   body.dark-mode #left-sidebar, body.dark-mode #right-sidebar {
     background-color: #111;
   }
+body.dark-mode #left-sidebar img,
+body.dark-mode #right-sidebar img {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); 
+}
 
   @media screen and (max-width: 768px) {
     #left-sidebar, #right-sidebar {
