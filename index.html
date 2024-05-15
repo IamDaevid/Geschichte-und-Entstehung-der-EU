@@ -6,6 +6,15 @@
 <title>Europedia</title>
 <style>
 
+  .verankertes-Bild {
+    position: fixed;
+    top: 100 px;
+    right: 25%;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
   #dark-mode-toggle {
     position: fixed;
     bottom: 10px;
@@ -89,6 +98,8 @@
 </head>
 <body>
 
+  <img src="" alt="Die Länder der EU" class="verankertes-Bild" id="verankertesBild">
+  
 <div id="dark-mode-toggle">
   <button onclick="toggleDarkMode()">Dark Mode</button>
 </div>
