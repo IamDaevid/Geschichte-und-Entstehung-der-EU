@@ -6,7 +6,7 @@
 <title>Europedia</title>
 <style>
 
-  .verankertes-Bild {
+  .europakarte {
     position: absolute;
     top: 730px;
     right: 140px;
@@ -25,7 +25,7 @@
   }
   
   #left-sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -40,7 +40,7 @@
   }
 
   #right-sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100%;
@@ -100,7 +100,7 @@
 </head>
 <body>
 
-  <img src="eulaender.jpg" alt="Die Länder der EU" class="verankertes-Bild" id="verankertesBild">
+  <img src="eulaender.jpg" alt="Die Länder der EU" class="europakarte" id="europakarte">
   
 <div id="dark-mode-toggle">
   <button onclick="toggleDarkMode()">Dark Mode</button>
