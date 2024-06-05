@@ -6,13 +6,20 @@
 <title>Europedia</title>
 <style>
 
+  .logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+  
   .europakarte {
     position: absolute;
     top: 730px;
     right: 140px;
     width: 1037.66px;
     height: 1200px;
-    z-index: 69; <!-- nice -->
+    z-index: 1;
     opacity: 1;
     transition: 0.5s;
   }
@@ -102,7 +109,11 @@
 
   <img src="eulaender.jpg" alt="Die Länder der EU" class="europakarte" id="europakarte">
   
-<div id="dark-mode-toggle">
+  <div id="logo">
+    <img src="logo.png" alt="Europedia Logo">
+  </div>
+
+  <div id="dark-mode-toggle">
   <button onclick="toggleDarkMode()">Dark Mode</button>
 </div>
 
@@ -118,61 +129,53 @@
   <h1>Willkommen auf Europedia</h1>
   <p>Geschichte der EU</p>
 <p>Der 1. Januar 1958 gilt als der Gründungstag der heutigen 
-  <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union" title="EU">EU</a>
-    .</p>
+  <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union" title="EU">EU</a> .
+</p>
 <p>Der Vertrag von Rom lege den Grundstein der heutigen sowie damaligen Europäischen Union.</p>
-<p>Es gab zwar schon eine Art Vorform der EU</p>
-<p>(Europäischen Gemeinschaft für Kohle und Stahl)</p>
+<p>Es gab zwar schon eine Art Vorform der 
+  <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union" title="EU">EU</a>
+</p>
+<p><a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Gemeinschaft_f%C3%BCr_Kohle_und_Stahl" title="Europäische Gemeinschaft für Kohle und Stahl">(Europäischen Gemeinschaft für Kohle und Stahl)</a>
+</p>
 
 <p>Diese war aber nur für wirtschaftliche Zwecke gedacht und nicht als ein Zusammenschluss von Ländern, wie wir ihn heute kennen.</p>
-<p>Die NATO (Nordatlantikvertrags-Organisation)</p>
- 
-<p>Erklärung zu schwarz markierten Begriffen:</p>
+<p>Die <a href="https://www.nato.int/nato-welcome/index_de.html" title="NATO">NATO</a> 
+  (Nordatlantikvertrags-Organisation)</p>
 
+<p>Ordne die folgenden <a href="https://www.nato.int/cps/en/natohq/topics_52044.htm" title="Mitgliedsstaaten der EU">Mitgliedsstaaten der EU</p>
 
-<p>- Europäische Gemeinschaft für Kohle und Stahl</p>
-<p>Wird auch Montanunion genannt, war wie schon gesagt ein europäischer Wirtschaftsverband.</p> 
-<p>Der größte Vorteil dieser Gemeinschaft war Ressourcen (größtenteils Kohle u. Stahl)</p>
-<p>In andere Mitgliedsstaaten zu versenden, ohne den dazugehörigen Zoll zu zahlen.</p>
-<p>Dieser Verband wurde am 23. Juli 1952 in Paris festgelegt.</p>
-<p>Gründer waren unter anderem Robert Schuman, Jean Monnet und Konrad Adenauer.</p>
-
-<p>-NATO (Nordatlantikvertrags-Organisation) wurde am 4. April 1949 gegründet.</p>
-<p>Seit dem April 2023 zählen sich insgesamt 31 Länder als Mitglieder der NATO. Unter anderem:</p>
-
-<p>-Albanien (2009)</p>
-<p>-Belgien (1949)</p>
-<p>-Bulgarien (2004)</p>
-<p>-Dänemark (1949)</p>
-<p>-Deutschland (1955)</p>
-<p>-Estland (2004)</p>
-<p>-Finnland (2023)</p>
-<p>-Frankreich (1949)</p>
-<p>-Griechenland (1952)</p>
-<p>-Island (1949)</p>
-<p>-Italien (1949)</p>
-<p>-Kanada (1949)</p>
-<p>-Kroatien (2009)</p>
-<p>-Lettland (2004)</p>
-<p>-Litauen (2004)</p>
-<p>-Luxemburg (1949)</p>
-<p>-Montenegro (2017)</p>
-<p>-Niederlande (1949)</p>
-<p>-Nordmatzedonien (2020)</p>
-<p>-Norwegen (1949)</p>
-<p>-Polen (1999)</p>
-<p>-Portagel (1949)</p>
-<p>-Rumänien (2004)</p>
-<p>-Schweden (2024)</p>
-<p>-Slowakei (2004)</p>
-<p>-Slowenien (2004)</p>
-<p>-Spanien (1982)</p>
-<p>-Tschechien (1999)</p>
-<p>-Türkei (1952)</p>
-<p>-Ungarn (1999)</p>
-<p>-Vereinigte Staaten (1949)</p>
-<p>-Vereinigtes Königeich (1949)</p>
-<p>Quelle des Länderverzeichnisses: "https://www.nato.int/nato-welcome/index_de.html"</p>
+<p>-Albanien</p>
+<p>-Belgien</p>
+<p>-Bulgarien</p>
+<p>-Dänemark</p>
+<p>-Deutschland</p>
+<p>-Estland</p>
+<p>-Finnland</p>
+<p>-Frankreich</p>
+<p>-Griechenland</p>
+<p>-Island</p>
+<p>-Italien</p>
+<p>-Kanada</p>
+<p>-Kroatien</p>
+<p>-Lettland</p>
+<p>-Litauen</p>
+<p>-Luxemburg</p>
+<p>-Montenegro</p>
+<p>-Niederlande</p>
+<p>-Nordmatzedonien</p>
+<p>-Norwegen</p>
+<p>-Polen</p>
+<p>-Portagel</p>
+<p>-Rumänien</p>
+<p>-Schweden</p>
+<p>-Slowakei</p>
+<p>-Slowenien</p>
+<p>-Spanien</p>
+<p>-Tschechien</p>
+<p>-Türkei</p>
+<p>-Ungarn</p>
+<p>-Vereinigte Staaten</p>
+<p>-Vereinigtes Königeich</p>
 
 <p>Jetzt kommen wir zur mythischen bzw. griechisch-mythologischen Entstehung Europa.</p>
 <p>Die älteste literarische Referenz auf Europa ist in der Ilias von Homer zu finden,</p>
