@@ -17,9 +17,8 @@
     background-attachment: fixed;
   }
 
-  .dark-mode body {
+  .dark-mode {
     background-image: url('parlanacht.jpg');
-    background-color: #222;
   }
   
   .container {
@@ -34,7 +33,7 @@
   }
 
   .dark-mode .container {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); 
     color: white;
   }
 
@@ -45,8 +44,9 @@
   .toggle-img {
     content: url('bright.png');
     cursor: pointer;
-    position: static;
-    bottom: 20px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
     right: 20px;
     transition: filter 0.4s ease;
   }
@@ -59,12 +59,11 @@
 <body>
 
 <div class="container">
-  <h1>Willkommen auf Europedia</h1>
-  <p>Geschichte der EU</p>
+  <h1>Geschichte der EU</h1>
   <p>Der 1. Januar 1958 gilt als der Gründungstag der heutigen 
     <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union" title="EU">EU</a> .
   </p>
-  <p>Der Vertrag von Rom lege den Grundstein der heutigen sowie damaligen Europäischen Union.</p>
+  <p><a href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:11992E/TXT" title="Der Vertrag von Rom">Der Vertrag von Rom</a>lege den Grundstein der heutigen sowie damaligen Europäischen Union.</p>
   <p>Es gab zwar schon eine Art Vorform der 
     <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union" title="EU">EU</a>
   </p>
@@ -75,7 +74,7 @@
   <p>Die <a href="https://www.nato.int/nato-welcome/index_de.html" title="NATO">NATO</a> 
     (Nordatlantikvertrags-Organisation)</p>
 
-  <p>Die folgenden Länder sind Teil der EU:</p>
+  <h1>Die folgenden Länder sind Teil der EU:</h1>
 
   <p>-Albanien</p>
   <p>-Belgien</p>
@@ -110,8 +109,7 @@
   <p>-Vereinigte Staaten</p>
   <p>-Vereinigtes Königreich</p>
 
-  <p>Jetzt kommen wir zur mythischen bzw. griechisch-mythologischen Entstehung Europa.</p>
-  <p>Die älteste literarische Referenz auf Europa ist in der Ilias von Homer zu finden,</p>
+  <h1><a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union" title="EU">EU</a> > in der <a href="https://de.wikipedia.org/wiki/Griechische_Mythologie" title="Griechische Mythologie">mythischen bzw. griechischen Mythologie</a>  (Die älteste Referenz von Europa).</h1>
 
   <p>wo Europa die Tochter des Phoinix ist. Antike Erzählungen des Europa-Mythos finden sich in der „Europa“ des Moschos und in den „Metamorphosen“ des Ovid.</p>
   <p>Darüber hinaus gibt es weitere Erzählungen von der Entführung Europas.</p>
@@ -127,14 +125,34 @@
   <p>Quelle der Geschichte: <a href="https://de.wikipedia.org/wiki/Europa_(Tochter_des_Agenor)" title="https://de.wikipedia.org/wiki/Europa_(Tochter_des_Agenor)">https://de.wikipedia.org/wiki/Europa_(Tochter_des_Agenor)</a></p>
   <p>Dies war eine kurze Einführung in die Legende, wie Europa entstanden ist.</p>
   <p>Nun kommen wir aber zu einem der Hauptthemen Europas zurück, welches insbesondere auch Deutschland betrifft.</p>
-  <p>Oben im Text ist eine kurze Zusammenfassung, was die NATO ist und was sie macht.</p>
-  <p>Die NATO ist wie schon gesagt eine Art Allianz zwischen westlich geprägten Ländern.</p> 
-  <p>Mit "Westlich geprägt" meine ich Länder, die eine Art Demokratieform wie die USA haben.</p>
-  <p>Die NATO ist nicht, wie viele wahrscheinlich denken, ausschließlich zur Verteidigung gedacht-Nein, sie dient auch zur Demokratieförderung in den Mitgliedsstaaten.</p>
+  <p>Oben im Text ist eine kurze Zusammenfassung, was die <a href="https://www.nato.int/nato-welcome/index_de.html" title="NATO">NATO</a> ist und was sie macht.</p>
+  <p>Die <a href="https://www.nato.int/nato-welcome/index_de.html" title="NATO">NATO</a> ist wie schon gesagt eine Art Allianz zwischen westlich geprägten Ländern.</p> 
+  <p>Mit "Westlich geprägt" werden Länder, die eine Art Demokratieform wie die USA haben gemeint.</p>
+  <p>Die <a href="https://www.nato.int/nato-welcome/index_de.html" title="NATO">NATO</a> ist nicht, wie viele wahrscheinlich denken, ausschließlich zur Verteidigung gedacht. Nein, sie dient auch zur Demokratieförderung in den Mitgliedsstaaten.</p>
   <p>Zudem steht sie diesen auch für Ratschläge und Kooperationen in Sachen Sicherheit und Verteidigung zur Verfügung.</p>
 
-  <h1>Hast du es kapiert? Dann probier dein Wissen bei diesem Quiz aus.</h1>
+  <h1>(ein paar) Natoeinsätze</h1>
+  <p>Kosovo - Kosovo Force (KFOR) seit 1999</p>
+  <p>Afrika - Unterstützung der Afrikanischen Union (AU) bei AU-Missionen in Afrika seit 2005</p>
+  <p>Baltikum und Westbalkan - Air Policing Missions seit 2014</p>
+  <p>Bosnien & Herzegowina (1995-2004)</p>
+  <p>ehemaliges Jugoslawien (1999)</p>
+  <p>EJR Mazedonien 2001</p>
+
+  <h1>VJTF</h1>
+  <p>Die Schnelle Eingreiftruppe der NATO wird verstärkt ("enhanced") und durch eine sogenannte "Speerspitze", die Very High Readiness Joint Task Force (VJTF), ergänzt.</p>
+  <p>Dies beschlossen die Verteidigungsminister der Allianz am 5. Februar 2015, nachdem bereits auf dem NATO-Gipfel in Wales im September 2014 angesichts der Ukrainekrise ein Readiness Action Plan beschlossen worden war, der unter anderem die kollektive Verteidigungsfähigkeit der Allianz insbesondere an den östlichen Rändern des NATO-Vertragsgebiets stärken soll.</p>
+  <p>Quelle der Information: <a href="https://crp-infotec.de/nato-im-einsatz/" title="https://crp-infotec.de/nato-im-einsatz/">https://crp-infotec.de/nato-im-einsatz/</a></p>
+  
+  <h1>Kennst du dich jetzt mit der Vergangenheit der EU aus? Dann probier dein Wissen bei diesem Quiz aus.</h1>
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfG_2b-Q4wlOXl_WTs22YHZcjpBSR62iKRgLQaqHjW-99ERkA/viewform?embedded=true" width="800" height="3168" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+<h1>Schlusswort</h1>
+  <p>Vielen Dank für den Besuch auf unserer Website zur Geschichte und Entstehung der europäischen Union.</p>
+  <p>Wir hoffen, dass Sie einen tiefen Einblick in die Geschichte, Werte und Errungenschaften dieser einzigartigen Gemeinschaft erringen konnten.</p>
+  <p>Lassen sie sich weiterhin davon inspirieren und tragen Sie die Vision eines geeinten Europas in die Zukunft mit.</p>
+  <p>Gemeinsam können wir die Herausforderungen von morgen meistern und eine wohlhabende und friedvollen Gesellschafft erschaffen.</p>
+  <h1>Vielen Dank und auf Wiedersehen!</h1>
 </div>
 
 <img class="toggle-img" onclick="toggleDarkMode()" alt="Dark Mode-Schalter">
