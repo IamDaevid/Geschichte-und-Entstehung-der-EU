@@ -156,13 +156,6 @@ function toggleDarkMode() {
 window.addEventListener('scroll', () => {
   const body = document.body;
   const toggleImg = document.getElementById('toggle-img');
-
-  if (window.scrollY > 100) { // Aktiviert den Dark Mode nach 100px Scrollen
-    body.classList.add('dark-mode');
-    toggleImg.src = 'dark.png';
-  } else {
-    body.classList.remove('dark-mode');
-    toggleImg.src = 'bright.png';
   }
 });
 </script>
