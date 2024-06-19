@@ -38,13 +38,14 @@
   }
 
   .dark-mode .toggle-img {
-    content: url('dark.png');
+    content: url('bright.png');
   }
 
   .toggle-img {
-    content: url('bright.png');
+    content: url('dark.png');
     cursor: pointer;
-    position: absolute;
+    width: 30px;
+    position: fixed;
     top: 20px;
     right: 20px;
     transition: filter 0.4s ease;
@@ -136,7 +137,7 @@
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfG_2b-Q4wlOXl_WTs22YHZcjpBSR62iKRgLQaqHjW-99ERkA/viewform?embedded=true" width="800" height="3168" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
 </div>
 
-<img class="toggle-img" onclick="toggleDarkMode()" alt="Dark Mode-Schalter">
+<img class="toggle-img" id="toggle-img" onclick="toggleDarkMode()" alt="Dark Mode-Schalter">
 
 <script>
 function toggleDarkMode() {
@@ -151,6 +152,19 @@ function toggleDarkMode() {
     toggleImg.src = 'bright.png';
   }
 }
+
+window.addEventListener('scroll', () => {
+  const body = document.body;
+  const toggleImg = document.getElementById('toggle-img');
+
+  if (window.scrollY > 100) { // Aktiviert den Dark Mode nach 100px Scrollen
+    body.classList.add('dark-mode');
+    toggleImg.src = 'dark.png';
+  } else {
+    body.classList.remove('dark-mode');
+    toggleImg.src = 'bright.png';
+  }
+});
 </script>
 </body>
 </html>
