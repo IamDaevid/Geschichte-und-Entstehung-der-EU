@@ -9,6 +9,7 @@
   body {
     margin: 0;
     padding: 0;
+    z-index: 1;
     font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
     transition: background-color 0.4s ease;
   }
@@ -16,6 +17,7 @@
   .container {
     position: relative;
     max-width: 800px;
+    z-index: 1;
     margin: 50px auto;
     background-color: white;
     padding: 20px;
@@ -35,7 +37,7 @@
 
   .dark-mode .toggle-img {
     content: url('dark.png');
-    z-index: 1;
+    z-index: 2;
     width: 419.9px;
     height: 112.2px;
   }
@@ -43,7 +45,7 @@
   .toggle-img {
     content: url('bright.png');
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
     width: 419.9px;
     height: 112.2px;
     position: relative;
@@ -54,6 +56,18 @@
 
   .toggle-img:hover {
     filter: brightness(1.3);
+  }
+
+  .background {
+    content: url('parlatag.jpg');
+    z-index: 0;
+    position: relative;
+  }
+
+  .dark-mode .background {
+    content: url('parnacht.jpg');
+    z-index: 0;
+    position: relative;
   }
 </style>
 </head>
@@ -151,8 +165,10 @@ function toggleDarkMode() {
 
   if (body.classList.contains('dark-mode')) {
     toggleImg.src = 'dark.png';
+    toggleImg.src = 'parlatag.jpg';
   } else {
     toggleImg.src = 'bright.png';
+    toggleImg.src = 'parlanacht.jpg';
   }
 }
 </script>
