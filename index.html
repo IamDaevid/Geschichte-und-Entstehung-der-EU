@@ -25,44 +25,14 @@
     z-index: 2;
   }
   
-  #left-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100px;
-    background-color: #333;
-    z-index: 1;
-  }
-  #left-sidebar img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  #right-sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100px;
-    background-color: #333;
-    z-index: 1;
-  }
-
-  #right-sidebar img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
   #content {
+    top: 100px
     padding: 20px;
     margin-left: 100px;
     margin-right: 100px;
     background-color: #fff; 
     color: #333;
-    z-index: 0;
+    z-index: 1;
     position: relative;
     font-family: 'Segoe UI Semibold', Arial, sans-serif;
   }
@@ -77,10 +47,6 @@
     background-color: #222;
     color: #fff;
   }
-  
-  body.dark-mode #left-sidebar, body.dark-mode #right-sidebar {
-    background-color: #111;
-  }
 
   #content h1 {
     font-family: 'Playfair Display', serif;
@@ -90,16 +56,6 @@
     #left-sidebar, #right-sidebar {
       width: 60px;
     }
-    #content {
-      margin-left: 100px;
-      margin-right: 100px;
-      padding: 20px;
-      background-color: #fff;
-      color: #333;
-      z-index: 0;
-      position: relative;
-      font-family: "Arial", sans-serif;
-   }
   }
 </style>
 </head>
@@ -110,14 +66,6 @@
   <div id="dark-mode-toggle">
   <button onclick="toggleDarkMode()">Dark Mode</button>
   <img src="dark.png" alt="dark">
-</div>
-
-<div id="left-sidebar">
-  <img src="europarlament.jpg" alt="Europäisches Parlament">
-</div>
-
-<div id="right-sidebar">
-  <img src="europarlament.jpg" alt="Europäisches Parlament">
 </div>
 
 <div id="content">
