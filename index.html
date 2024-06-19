@@ -7,13 +7,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
 
+  #europaparlamenttag {
+    position: fixed;
+    z-index: 0;
+  }
+  
   #europakarte {
     position: absolute;
     top: 400px;
     right: 100px;
     width: 1037.66px;
     height: 1200px;
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
     transition: 0.5s;
   }
@@ -60,7 +65,8 @@
 </style>
 </head>
 <body>
-
+  <img src="parlatag.jpg" alt="parlatag" class"europaparlamenttag" id"uropaparlamenttag">
+  
   <img src="eulaender.jpg" alt="Die Länder der EU" class="europakarte" id="europakarte">
   
   <div id="dark-mode-toggle">
